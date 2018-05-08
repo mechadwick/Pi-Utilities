@@ -1,9 +1,8 @@
-FROM resin/rpi-raspbian:jessie-20170111
+#FROM resin/rpi-raspbian:jessie-20170111
+FROM resin/rpi-raspbian
 
 RUN apt-get update
-RUN apt-get -y install git cmake libusb-1.0-0-dev
-RUN apt-get -y install build-essential
-RUN apt-get -y install libtool autoconf automake libfftw3-dev
+RUN apt-get -y install git cmake libusb-1.0-0-dev build-essential libtool autoconf automake libfftw3-dev
 
 WORKDIR /root/
 RUN git clone git://git.osmocom.org/rtl-sdr.git
