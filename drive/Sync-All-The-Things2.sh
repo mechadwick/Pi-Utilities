@@ -14,6 +14,9 @@ drive pull -quiet Current_Working
 echo "Syncing Games"
 drive pull -quiet Games
 
+echo "Syncing Google Photos"
+drive pull -quiet "Google Photos"
+
 echo "Syncing Photo_Backup"
 drive pull -quiet Photo_Backup
 
